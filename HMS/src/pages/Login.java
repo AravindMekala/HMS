@@ -1,5 +1,7 @@
 package pages;
 
-public class Login {
+import org.openqa.selenium.WebDriver;
 
+public class Login {
+	public WebDriver driver;
 }

@@ -1,5 +1,7 @@
 package startClass;
 
+import smokeTests.LoginPage;
+
 public class StartClass {
 	public static String environment;
 
@@ -9,6 +11,12 @@ public class StartClass {
 		System.out.println("Start POM Framework");
 		
 		environment = "HMS_LOGIN_PAGE";
+		
+		LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request().selectors(
+				
+				LoginPage.class
+				
+				)
 		
 	}
 
